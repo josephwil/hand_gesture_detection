@@ -1,0 +1,7 @@
+README.md
+setup.py
+gesture_recognition.egg-info/PKG-INFO
+gesture_recognition.egg-info/SOURCES.txt
+gesture_recognition.egg-info/dependency_links.txt
+gesture_recognition.egg-info/requires.txt
+gesture_recognition.egg-info/top_level.txt

@@ -1,0 +1,135 @@
+Metadata-Version: 2.4
+Name: gesture_recognition
+Version: 1.0.0
+Summary: Hand Gesture Recognition System
+Author: Joseph Wilson
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.13.3
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: opencv-python>=4.9.0.80
+Requires-Dist: torch>=2.7.0
+Requires-Dist: torchvision>=0.18.0
+Requires-Dist: tensorflow>=2.16.1
+Requires-Dist: keras>=2.16.1
+Requires-Dist: scikit-learn>=1.4.1.post1
+Requires-Dist: pillow>=10.2.0
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: tqdm>=4.66.2
+Requires-Dist: matplotlib>=3.8.3
+Requires-Dist: ultralytics>=8.1.28
+Requires-Dist: mediapipe>=0.10.11
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Hand Gesture Recognition
+
+Real-time hand gesture recognition using YOLOv8 and OpenCV. The system detects hand gestures from webcam input and matches them against a dataset of reference gestures.
+
+## Project Structure
+
+```
+hand-gesture-recognition/
+â”œâ”€â”€ datasets/
+â”‚   â””â”€â”€ hand_gestures/      # Dataset folders containing gesture images
+â”‚       â”œâ”€â”€ A/              # Images for gesture 'A'
+â”‚       â”œâ”€â”€ B/              # Images for gesture 'B'
+â”‚       â””â”€â”€ ...            
+â”œâ”€â”€ gesture_recognition.py  # Main script
+â”œâ”€â”€ run.bat               # Windows batch script to run directly
+â”œâ”€â”€ run.ps1              # PowerShell script to run directly
+â”œâ”€â”€ requirements.txt     # Project dependencies
+â””â”€â”€ README.md           # This file
+```
+
+## Features
+
+- Real-time hand gesture recognition using webcam
+- YOLOv8 hand detection
+- Deep learning feature extraction
+- Temporal smoothing for stable predictions
+- FPS and processing time monitoring
+- GPU acceleration (if available)
+- Configurable confidence threshold
+- Detailed logging
+
+## Requirements
+
+- Python 3.13.3
+- Webcam
+- NVIDIA GPU (optional, for better performance)
+
+## Quick Start
+
+### Option 1: Using Batch Script (Windows)
+Simply double-click `run.bat` or run in terminal:
+```bash
+run.bat
+```
+
+### Option 2: Using PowerShell Script (Windows)
+Right-click `run.ps1` and select "Run with PowerShell" or run in PowerShell:
+```powershell
+.\run.ps1
+```
+
+### Option 3: Manual Run
+```bash
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+python gesture_recognition.py
+```
+
+## Dataset Structure
+
+Place your gesture images in the following structure:
+```
+datasets/hand_gestures/
+â”œâ”€â”€ A/          # Folder name is the gesture label
+â”‚   â”œâ”€â”€ 1.jpg  # Example gesture image
+â”‚   â””â”€â”€ 2.jpg
+â”œâ”€â”€ B/
+â”‚   â””â”€â”€ ...
+â””â”€â”€ ...
+```
+
+Each gesture should have its own folder, with the folder name being the gesture label. The system will use the first image in each folder as the reference for that gesture.
+
+## Usage
+
+1. Run the program using any of the methods above
+2. Show your hand gestures in the green rectangle
+3. Press 'q' to quit
+
+## Performance
+
+The system uses several techniques to ensure good recognition:
+- YOLOv8 for robust hand detection
+- Deep learning feature extraction
+- GPU acceleration when available
+- Temporal smoothing of predictions
+- Combination of similarity metrics
+
+## Troubleshooting
+
+1. If the webcam doesn't open:
+   - Check if another application is using the webcam
+   - Try changing the camera_index in gesture_recognition.py
+
+2. If gestures aren't recognized:
+   - Ensure good lighting conditions
+   - Keep your hand within the green rectangle
+   - Try adjusting the confidence_threshold
+   - Check if your dataset images are clear and well-lit
+
+3. If the program is slow:
+   - Check if GPU is being used (look for CUDA messages)
+   - Close other resource-intensive applications
+   - Try reducing the model complexity in the code 
