@@ -1,0 +1,13 @@
+numpy>=1.19.0,<2.0.0
+opencv-python>=4.5.0,<5.0.0
+torch>=2.7.0
+torchvision>=0.18.0
+tensorflow>=2.16.1
+keras>=2.16.1
+scikit-learn>=1.4.1.post1
+pillow>=10.2.0
+python-dotenv>=1.0.1
+tqdm>=4.66.2
+matplotlib>=3.8.3
+ultralytics>=8.1.28
+mediapipe>=0.10.11 
