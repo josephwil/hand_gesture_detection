@@ -1,10 +1,10 @@
-PS C:\Users\josep\Downloads\WORK\PROJECT\SLDUML>
+PS C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML>
  *  History restored 
 
 
 
 
-PS C:\Users\josep\Downloads\WORK\PROJECT\SLDUML> .\setup.bat
+PS C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML> .\setup.bat
 Checking Python version...
 Creating virtual environment...
 Activating virtual environment...
@@ -19,7 +19,7 @@ Installing collected packages: pip
       Successfully uninstalled pip-25.0.1
 Successfully installed pip-25.1.1
 Installing dependencies...
-Obtaining file:///C:/Users/josep/Downloads/WORK/PROJECT/SLDUML
+Obtaining file:///C:/Users/mypc/Downloads/WORK/PROJECT/SLDUML
   Installing build dependencies ... done
   Checking if build backend supports build_editable ... done
   Getting requirements to build editable ... done
@@ -44,19 +44,19 @@ Press any key to continue . . .
 
 
 
-PS C:\Users\josep\Downloads\WORK\PROJECT\SLDUML> Set-ExecutionPolicy RemoteSigned -Scope Process
-PS C:\Users\josep\Downloads\WORK\PROJECT\SLDUML> venv\Scripts\activate.bat
+PS C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML> Set-ExecutionPolicy RemoteSigned -Scope Process
+PS C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML> venv\Scripts\activate.bat
 
 
 
-PS C:\Users\josep\Downloads\WORK\PROJECT\SLDUML> Set-ExecutionPolicy RemoteSigned -Scope Process
-PS C:\Users\josep\Downloads\WORK\PROJECT\SLDUML> venv/Scripts/activate 
+PS C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML> Set-ExecutionPolicy RemoteSigned -Scope Process
+PS C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML> venv/Scripts/activate 
 
 
 
-(venv) PS C:\Users\josep\Downloads\WORK\PROJECT\SLDUML> python gesture_recognition.py
+(venv) PS C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML> python gesture_recognition.py
 Traceback (most recent call last):
-  File "C:\Users\josep\Downloads\WORK\PROJECT\SLDUML\gesture_recognition.py", line 5, in <module>
+  File "C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML\gesture_recognition.py", line 5, in <module>
     import cv2
 ModuleNotFoundError: No module named 'cv2'
 
@@ -65,7 +65,7 @@ ModuleNotFoundError: No module named 'cv2'
 
 
 
-(venv) PS C:\Users\josep\Downloads\WORK\PROJECT\SLDUML> pip install opencv-python mediapipe numpy
+(venv) PS C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML> pip install opencv-python mediapipe numpy
 Collecting opencv-python
   Using cached opencv_python-4.11.0.86-cp37-abi3-win_amd64.whl.metadata (20 kB)
 ERROR: Could not find a version that satisfies the requirement mediapipe (from versions: none)
@@ -75,7 +75,7 @@ ERROR: No matching distribution found for mediapipe
 
 
 
-(venv) PS C:\Users\josep\Downloads\WORK\PROJECT\SLDUML> pip install opencv-python numpy pillow
+(venv) PS C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML> pip install opencv-python numpy pillow
 Collecting opencv-python
   Using cached opencv_python-4.11.0.86-cp37-abi3-win_amd64.whl.metadata (20 kB)
 Collecting numpy
@@ -95,7 +95,7 @@ Successfully installed numpy-2.2.6 opencv-python-4.11.0.86 pillow-11.2.1
 
 
 
-(venv) PS C:\Users\josep\Downloads\WORK\PROJECT\SLDUML> pip install torch torchvision
+(venv) PS C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML> pip install torch torchvision
 Collecting torch
   Using cached torch-2.7.0-cp313-cp313-win_amd64.whl.metadata (29 kB)
 Collecting torchvision
@@ -114,8 +114,8 @@ Collecting fsspec (from torch)
   Downloading fsspec-2025.5.0-py3-none-any.whl.metadata (11 kB)
 Collecting setuptools (from torch)
   Using cached setuptools-80.8.0-py3-none-any.whl.metadata (6.6 kB)
-Requirement already satisfied: numpy in c:\users\josep\downloads\work\project\slduml\venv\lib\site-packages (from torchvision) (2.2.6)
-Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in c:\users\josep\downloads\work\project\slduml\venv\lib\site-packages (from torchvision) (11.2.1)
+Requirement already satisfied: numpy in c:\users\mypc\downloads\work\project\slduml\venv\lib\site-packages (from torchvision) (2.2.6)
+Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in c:\users\mypc\downloads\work\project\slduml\venv\lib\site-packages (from torchvision) (11.2.1)
 Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch)
   Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
 Collecting MarkupSafe>=2.0 (from jinja2->torch)
@@ -144,22 +144,22 @@ Successfully installed MarkupSafe-3.0.2 filelock-3.18.0 fsspec-2025.5.0 jinja2-3
 
 
 
-(venv) PS C:\Users\josep\Downloads\WORK\PROJECT\SLDUML> pip install ultralytics
+(venv) PS C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML> pip install ultralytics
 Collecting ultralytics
   Downloading ultralytics-8.3.143-py3-none-any.whl.metadata (37 kB)
-Requirement already satisfied: numpy>=1.23.0 in c:\users\josep\downloads\work\project\slduml\venv\lib\site-packages (from ultralytics) (2.2.6)
+Requirement already satisfied: numpy>=1.23.0 in c:\users\mypc\downloads\work\project\slduml\venv\lib\site-packages (from ultralytics) (2.2.6)
 Collecting matplotlib>=3.3.0 (from ultralytics)
   Downloading matplotlib-3.10.3-cp313-cp313-win_amd64.whl.metadata (11 kB)
-Requirement already satisfied: opencv-python>=4.6.0 in c:\users\josep\downloads\work\project\slduml\venv\lib\site-packages (from ultralytics) (4.11.0.86)
-Requirement already satisfied: pillow>=7.1.2 in c:\users\josep\downloads\work\project\slduml\venv\lib\site-packages (from ultralytics) (11.2.1)
+Requirement already satisfied: opencv-python>=4.6.0 in c:\users\mypc\downloads\work\project\slduml\venv\lib\site-packages (from ultralytics) (4.11.0.86)
+Requirement already satisfied: pillow>=7.1.2 in c:\users\mypc\downloads\work\project\slduml\venv\lib\site-packages (from ultralytics) (11.2.1)
 Collecting pyyaml>=5.3.1 (from ultralytics)
   Downloading PyYAML-6.0.2-cp313-cp313-win_amd64.whl.metadata (2.1 kB)
 Collecting requests>=2.23.0 (from ultralytics)
   Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
 Collecting scipy>=1.4.1 (from ultralytics)
   Downloading scipy-1.15.3-cp313-cp313-win_amd64.whl.metadata (60 kB)
-Requirement already satisfied: torch>=1.8.0 in c:\users\josep\downloads\work\project\slduml\venv\lib\site-packages (from ultralytics) (2.7.0)
-Requirement already satisfied: torchvision>=0.9.0 in c:\users\josep\downloads\work\project\slduml\venv\lib\site-packages (from ultralytics) (0.22.0)
+Requirement already satisfied: torch>=1.8.0 in c:\users\mypc\downloads\work\project\slduml\venv\lib\site-packages (from ultralytics) (2.7.0)
+Requirement already satisfied: torchvision>=0.9.0 in c:\users\mypc\downloads\work\project\slduml\venv\lib\site-packages (from ultralytics) (0.22.0)
 Collecting tqdm>=4.64.0 (from ultralytics)
   Downloading tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
 Collecting psutil (from ultralytics)
@@ -198,17 +198,17 @@ Collecting urllib3<3,>=1.21.1 (from requests>=2.23.0->ultralytics)
   Downloading urllib3-2.4.0-py3-none-any.whl.metadata (6.5 kB)
 Collecting certifi>=2017.4.17 (from requests>=2.23.0->ultralytics)
   Downloading certifi-2025.4.26-py3-none-any.whl.metadata (2.5 kB)
-Requirement already satisfied: filelock in c:\users\josep\downloads\work\project\slduml\venv\lib\site-packages (from torch>=1.8.0->ultralytics) (3.18.0)
-Requirement already satisfied: typing-extensions>=4.10.0 in c:\users\josep\downloads\work\project\slduml\venv\lib\site-packages (from torch>=1.8.0->ultralytics) (4.13.2)
-Requirement already satisfied: sympy>=1.13.3 in c:\users\josep\downloads\work\project\slduml\venv\lib\site-packages (from torch>=1.8.0->ultralytics) (1.14.0)
-Requirement already satisfied: networkx in c:\users\josep\downloads\work\project\slduml\venv\lib\site-packages (from torch>=1.8.0->ultralytics) (3.4.2)
-Requirement already satisfied: jinja2 in c:\users\josep\downloads\work\project\slduml\venv\lib\site-packages (from torch>=1.8.0->ultralytics) (3.1.6)
-Requirement already satisfied: fsspec in c:\users\josep\downloads\work\project\slduml\venv\lib\site-packages (from torch>=1.8.0->ultralytics) (2025.5.0)
-Requirement already satisfied: setuptools in c:\users\josep\downloads\work\project\slduml\venv\lib\site-packages (from torch>=1.8.0->ultralytics) (80.8.0)
-Requirement already satisfied: mpmath<1.4,>=1.1.0 in c:\users\josep\downloads\work\project\slduml\venv\lib\site-packages (from sympy>=1.13.3->torch>=1.8.0->ultralytics) (1.3.0)
+Requirement already satisfied: filelock in c:\users\mypc\downloads\work\project\slduml\venv\lib\site-packages (from torch>=1.8.0->ultralytics) (3.18.0)
+Requirement already satisfied: typing-extensions>=4.10.0 in c:\users\mypc\downloads\work\project\slduml\venv\lib\site-packages (from torch>=1.8.0->ultralytics) (4.13.2)
+Requirement already satisfied: sympy>=1.13.3 in c:\users\mypc\downloads\work\project\slduml\venv\lib\site-packages (from torch>=1.8.0->ultralytics) (1.14.0)
+Requirement already satisfied: networkx in c:\users\mypc\downloads\work\project\slduml\venv\lib\site-packages (from torch>=1.8.0->ultralytics) (3.4.2)
+Requirement already satisfied: jinja2 in c:\users\mypc\downloads\work\project\slduml\venv\lib\site-packages (from torch>=1.8.0->ultralytics) (3.1.6)
+Requirement already satisfied: fsspec in c:\users\mypc\downloads\work\project\slduml\venv\lib\site-packages (from torch>=1.8.0->ultralytics) (2025.5.0)
+Requirement already satisfied: setuptools in c:\users\mypc\downloads\work\project\slduml\venv\lib\site-packages (from torch>=1.8.0->ultralytics) (80.8.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in c:\users\mypc\downloads\work\project\slduml\venv\lib\site-packages (from sympy>=1.13.3->torch>=1.8.0->ultralytics) (1.3.0)
 Collecting colorama (from tqdm>=4.64.0->ultralytics)
   Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
-Requirement already satisfied: MarkupSafe>=2.0 in c:\users\josep\downloads\work\project\slduml\venv\lib\site-packages (from jinja2->torch>=1.8.0->ultralytics) (3.0.2)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\mypc\downloads\work\project\slduml\venv\lib\site-packages (from jinja2->torch>=1.8.0->ultralytics) (3.0.2)
 Downloading ultralytics-8.3.143-py3-none-any.whl (1.0 MB)
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 569.7 kB/s eta 0:00:00
 Downloading matplotlib-3.10.3-cp313-cp313-win_amd64.whl (8.1 MB)
@@ -249,9 +249,9 @@ Successfully installed certifi-2025.4.26 charset-normalizer-3.4.2 colorama-0.4.6
 
 
 
-(venv) PS C:\Users\josep\Downloads\WORK\PROJECT\SLDUML> python gesture_recognition.py
+(venv) PS C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML> python gesture_recognition.py
 Creating new Ultralytics Settings v0.0.6 file  
-View Ultralytics Settings with 'yolo settings' or at 'C:\Users\josep\AppData\Roaming\Ultralytics\settings.json'
+View Ultralytics Settings with 'yolo settings' or at 'C:\Users\mypc\AppData\Roaming\Ultralytics\settings.json'
 Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
 Starting Hand Gesture Recognition...
 Press 'q' to quit
@@ -267,7 +267,7 @@ Error occurred: No reference gestures found in dataset
 
 
 
-(venv) PS C:\Users\josep\Downloads\WORK\PROJECT\SLDUML> python gesture_recognition.py
+(venv) PS C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML> python gesture_recognition.py
 Starting Hand Gesture Recognition...
 Press 'q' to quit
 Hand Gesture Recognition Started
@@ -276,7 +276,7 @@ Press 'q' to quit
 
 
 
-(venv) PS C:\Users\josep\Downloads\WORK\PROJECT\SLDUML> python gesture_recognition.py
+(venv) PS C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML> python gesture_recognition.py
 Starting Hand Gesture Recognition...
 Press 'q' to quit
 Hand Gesture Recognition Started
@@ -286,7 +286,7 @@ Press 'q' to quit
 
 
 
-(venv) PS C:\Users\josep\Downloads\WORK\PROJECT\SLDUML> python gesture_recognition.py
+(venv) PS C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML> python gesture_recognition.py
 Starting Hand Gesture Recognition...
 Press 'q' to quit
 Loaded reference for Welcome to JKIE
@@ -299,7 +299,7 @@ Press 'q' to quit
 
 
 
-(venv) PS C:\Users\josep\Downloads\WORK\PROJECT\SLDUML> python gesture_recognition.py
+(venv) PS C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML> python gesture_recognition.py
 Starting Hand Gesture Recognition...
 Press 'q' to quit
 Found 8 images for gesture Welcome to JKIE
@@ -312,7 +312,7 @@ Press 'q' to quit
 
 
 
-(venv) PS C:\Users\josep\Downloads\WORK\PROJECT\SLDUML> python gesture_recognition.py
+(venv) PS C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML> python gesture_recognition.py
 Starting Hand Gesture Recognition...
 Press 'q' to quit
 Found 8 images for gesture Welcome to JKIE
@@ -339,7 +339,7 @@ Background training complete. You can now show your hand.
 
 
 
-(venv) PS C:\Users\josep\Downloads\WORK\PROJECT\SLDUML> python gesture_recognition.py
+(venv) PS C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML> python gesture_recognition.py
 Starting Hand Gesture Recognition...
 Press 'q' to quit
 Found 8 images for gesture Welcome to JKIE
@@ -356,7 +356,7 @@ Error occurred: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\h
 
 
 
-(venv) PS C:\Users\josep\Downloads\WORK\PROJECT\SLDUML> python gesture_recognition.py
+(venv) PS C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML> python gesture_recognition.py
 Starting Hand Gesture Recognition...
 Press 'q' to quit
 Found 8 images for gesture Welcome to JKIE
@@ -374,7 +374,7 @@ Error occurred: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\h
 
 
 
-(venv) PS C:\Users\josep\Downloads\WORK\PROJECT\SLDUML> python gesture_recognition.py
+(venv) PS C:\Users\mypc\Downloads\WORK\PROJECT\SLDUML> python gesture_recognition.py
 Starting Hand Gesture Recognition...
 Press 'q' to quit
 Found 8 images for gesture Welcome to JKIE
