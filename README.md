@@ -35,13 +35,16 @@ Note: While newer Python versions might work, we recommend using Python 3.8 or 3
 
 ## Setup Instructions
 
-1. Check your Python version:
+0. Read it:
+    look first.md
+
+2. Check your Python version:
    ```bash
    python --version
    ```
    If you don't have Python installed or have a version outside the supported range, download it from python.org
 
-2. Create and activate a virtual environment (recommended):
+3. Create and activate a virtual environment (recommended):
    ```bash
    # Windows
    python -m venv venv
@@ -52,12 +55,12 @@ Note: While newer Python versions might work, we recommend using Python 3.8 or 3
    source venv/bin/activate
    ```
 
-3. Upgrade pip to the latest version:
+4. Upgrade pip to the latest version:
    ```bash
    python -m pip install --upgrade pip
    ```
 
-4. Install the required packages:
+5. Install the required packages:
    ```bash
    # For newer pip versions
    pip install -r requirements.txt
@@ -66,7 +69,7 @@ Note: While newer Python versions might work, we recommend using Python 3.8 or 3
    pip install --no-cache-dir -r requirements.txt
    ```
 
-5. Prepare your gesture dataset:
+6. Prepare your gesture dataset:
    - Create a folder named `datasets/hand_gestures/`
    - Inside it, create a subfolder for each gesture you want to recognize
    - Place reference images (.jpg, .jpeg, or .png) in the corresponding gesture folders
